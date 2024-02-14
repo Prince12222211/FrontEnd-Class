@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para">I am The Ghost Of The Uchiha Madara Uchiha</p>
+    <button></button>
+    <Script>
+let para=document.getElementById("para");
+function randomClr(){
+    const lett='0123456789';
+    let color='#';
+    for(let i=0;i<6;i++){
+        color+=lett[Math.floor(Math.random()*16)];
+    }
+    return color;
+
+}
+function changeBackground(){
+    const randomColor=randomClr();
+    document.body.style.background=randomClr;
+}
+para.addEventListener('click',changeBackground);
+    </Script>
+</body>
+
+</html>

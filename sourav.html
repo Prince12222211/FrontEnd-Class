@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=sr, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color</title>
+  <style>
+  
+    #change-color-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
-    <p id="demo"></p>
-    <script>
-        let arr=[45,34,342,23,234];
-        for(let i in arr){
-            document.write(i);
-        }
+  <!-- <h1>Change Background Color</h1> -->
+  <button id="change-color-button">Click Me to show the color Change</button>
 
-c
-    </script>
+  <script>
+ 
+    const changeColorButton = document.getElementById('change-color-button');
+
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function changeBackgroundColor() {
+      const randomColor = getRandomColor();
+      document.body.style.backgroundColor = randomColor;
+    }
+
+    // Add event listener to the button
+    changeColorButton.addEventListener('click', changeBackgroundColor);
+  </script>
 </body>
-
 </html>
