@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <!-- <p id="demo">
-     
+    <div id="div">
+        <form action="form">
+            <label for="demo">Name:</label>
+            <input type="text">
+            <br>
 
 
-    </p> -->
-    <script>
-        var count = 0;
-        function fun() {
-            if (count <= 5) {
-                document.getElementById("count").innerHTML = count;
-                count++;
+            <input style="margin-left: 50px;"  type="submit" name="submit" id="">
+
+        </form>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                align-content:center;
+            }
+            #div{
+              color:blue;
+              background-color: aqua;
+              border: 50rem;
+              border-color:black;
+              margin-top: 50%;
+              margin-left: 50%;
+              margin-bottom: 50%;
+              margin-right: 50%;
+
+
 
             }
-            if (count === 4) {
-                clearInterval(intervaild);
-            }
-
-        }
-        // },1000);
-        // setTimeout(fun, 3000);
-        // const intervaild=setInterval(fun,1000);
-        // setInterval(fun, 1000);
-    </script>
-    <p style="font-size: larger;">counter is <span id="count"></span></p>
+        </style>
+    </div>
 </body>
-
 </html>
