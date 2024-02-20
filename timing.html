@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="demo">
+     
+
+
+    </p> -->
+    <script>
+        var count = 0;
+        function fun() {
+            if (count <= 5) {
+                document.getElementById("count").innerHTML = count;
+                count++;
+
+            }
+            if (count === 4) {
+                clearInterval(intervaild);
+            }
+
+        }
+        // },1000);
+        // setTimeout(fun, 3000);
+        // const intervaild=setInterval(fun,1000);
+        // setInterval(fun, 1000);
+    </script>
+    <p style="font-size: larger;">counter is <span id="count"></span></p>
+</body>
+
+</html>
